@@ -3,7 +3,8 @@ import EventItem from './event-item';
 function EventList(props) {
   const { items } = props;
 
-  return <ul>
+  return (
+  <ul>
     {items.map((event) => (
     <EventItem
       key={event.id}
@@ -15,6 +16,7 @@ function EventList(props) {
       />
       ))}
   </ul>
+  );
 }
 
 export default EventList;
